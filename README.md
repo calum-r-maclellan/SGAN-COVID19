@@ -2,7 +2,7 @@
 PyTorch implementation of a Semi-supervised Generative Adversarial Network (SGAN) for performing multi-class classification of COVID-19 from chest X-ray imaging.
 
 ## Whats included 
-A brief overview of the idea behind this work, the way it was implemented, and corresponding results compared to supervised equivalents. A Jupyter Notebook has been provided (semi_GAN.ipynb) in a tutorial-styled layout, which is set up to run on Google Colab for building the proposed model and reproducing the results (TODO: add model weights for discriminator - Github fussy about the .pth.tar file size!). See instructions in the notebook itself for how to get this working. 
+A brief overview of the idea behind this work, the way it was implemented, and corresponding results compared to supervised equivalents. A Jupyter Notebook has been provided (semi_GAN.ipynb) in a tutorial-styled layout, which is set up to run on Google Colab for building the proposed model and reproducing the results (TODO: add model weights for discriminator - Github fussy about the .pth.tar file size!). See instructions in the notebook itself for how to get this working (heads up: if it doesnt load, refresh your browser and it should fix itself). 
 
 ## Idea
 - supervised learning models painfully inefficient: require significant database of labelled samples to discriminate between classes.
