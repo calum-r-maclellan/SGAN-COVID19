@@ -8,7 +8,7 @@ A brief overview of the idea behind this work, the way it was implemented, and c
 - supervised learning models painfully inefficient: require significant database of labelled samples to discriminate between classes.
 - doesn't represent how we learn: some direct instruction at beginning (labelled data), but majority of learning gained through experience and observation on our own (unlabelled data).
 - same applies to radiologist training: direct instruction on a few samples at beginning, with more knowledge/experience accumulated through years of practice. 
-- design semi-supervised approach to (loosely) mimic radiologist strategy of detecting COVID-19 from chest X-rays: accumulate extensive knowledge of non-COVID before learning to understand COVID-19 features.
+- design semi-supervised approach to (loosely) mimic radiologists strategy for learning to identify COVID-19 from chest X-rays: accumulate extensive knowledge of non-COVID before learning to understand the discriminative COVID-19 features.
 - develop experience of non-COVID patients using large database of unlabelled data, update knowledge with small labelled database of COVID and non-COVID data. 
 
 # Experiments
@@ -25,6 +25,8 @@ Schematic of the SGAN training workflow, including the training computations and
 ## GradCAM++ results 
 ![](https://github.com/calum-r-maclellan/SGAN-COVID19/blob/main/pics/gradcam++.png)
 
-# Conclusions and future work
-- 
-- 
+# Conclusions
+- despite seeing significantly less non-COVID labelled data, SGAN demonstrates strong similarity in diagnostic accuracy to the supervised equivalent.
+- SGAN presents as a highly promising architecture for performing semi-supervised learning on this task.
+- however it needs further investigation due to the potential fitting of confounding variables. 
+- this work lays the foundations for future work to build upon this model and devise novel methods to improve the classification performance, and enhance the ability to detect underlying covariates most strongly linked to COVID-19.
