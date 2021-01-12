@@ -24,3 +24,7 @@ Schematic of the SGAN training workflow, including the training computations and
 
 ## GradCAM++ results 
 ![](https://github.com/calum-r-maclellan/SGAN-COVID19/blob/main/pics/gradcam++.png)
+
+# Conclusions and future work
+- 
+- 
